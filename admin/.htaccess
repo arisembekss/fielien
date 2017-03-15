@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^wp\-admin\.c\-fielien\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.wp\-admin\.c\-fielien\.com$
+RewriteRule ^/?$ "http\:\/\/wp\-admin\.c\-fielien\.com\/index" [R=301,L]
+

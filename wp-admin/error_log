@@ -1,0 +1,22 @@
+[15-Oct-2016 17:44:08 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cfielien/public_html/wp-admin/connect_db.php on line 3
+[15-Oct-2016 17:44:08 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/cfielien/public_html/wp-admin/proccess.php on line 10
+[15-Oct-2016 17:44:08 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cfielien/public_html/wp-admin/proccess.php on line 29
+[15-Oct-2016 17:44:33 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cfielien/public_html/wp-admin/connect_db.php on line 3
+[15-Oct-2016 17:44:33 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/cfielien/public_html/wp-admin/proccess.php on line 10
+[15-Oct-2016 17:44:33 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cfielien/public_html/wp-admin/proccess.php on line 29
+[15-Oct-2016 17:44:40 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cfielien/public_html/wp-admin/connect_db.php on line 3
+[15-Oct-2016 17:44:40 Asia/Jakarta] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/cfielien/public_html/wp-admin/proccess.php on line 10
+[15-Oct-2016 17:44:40 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cfielien/public_html/wp-admin/proccess.php on line 29
+[15-Oct-2016 17:46:58 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cfielien/public_html/wp-admin/proccess.php:38) in /home/cfielien/public_html/wp-admin/proccess.php on line 41
+[15-Oct-2016 17:50:06 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cfielien/public_html/wp-admin/proccess.php:38) in /home/cfielien/public_html/wp-admin/proccess.php on line 41
+[15-Oct-2016 17:50:52 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cfielien/public_html/wp-admin/proccess.php:38) in /home/cfielien/public_html/wp-admin/proccess.php on line 41
+[15-Oct-2016 17:51:38 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cfielien/public_html/wp-admin/proccess.php:38) in /home/cfielien/public_html/wp-admin/proccess.php on line 41
+[15-Oct-2016 17:52:09 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cfielien/public_html/wp-admin/proccess.php:38) in /home/cfielien/public_html/wp-admin/proccess.php on line 41
+[15-Oct-2016 11:27:53 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:29:14 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:29:20 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:29:27 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:30:09 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:30:16 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:31:48 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28
+[15-Oct-2016 11:31:58 UTC] PHP Parse error:  syntax error, unexpected '$tab' (T_VARIABLE), expecting ',' or ';' in /home/cfielien/public_html/wp-admin/admin-lens.php on line 28

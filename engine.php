@@ -1,0 +1,8 @@
+<?php  
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\\.php [L]
+?>
