@@ -214,9 +214,7 @@
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <!-- <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
+                            
                         </div>
                         <img src="img/portfolio/golden.png" class="img-responsive" alt="">
                     </a>
