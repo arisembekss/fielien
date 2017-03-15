@@ -67,43 +67,7 @@
 
     <!-- Navigation -->
     
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">C'fielien</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Product</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Service</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#team">Additional</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+    <?php include 'nav-main.php' ?>
 
     <!-- Header -->
     <header>
@@ -127,7 +91,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4 w3-hover-shadow">
-                    <a href="#" onclick="document.getElementById('id01').style.display='block'">
+                    <a href="services.php" onclick="document.getElementById('id01').style.display='block'">
                         <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
