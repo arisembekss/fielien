@@ -28,10 +28,7 @@
         $portimg4 = $row4['pic_mob'];
         $portl4 = $row4['pic'];
     }
-    /*echo $portimg1;
-    echo $portimg2;
-    echo $portimg3;
-    echo $portimg4;*/
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
