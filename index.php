@@ -134,7 +134,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading">Eyegalsses</h4>
+                        <h4 class="service-heading">Eyegalsses </h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </a>
                 </div>
@@ -672,7 +672,7 @@
             </header>
             <div class="w3-row">
                 <div class="w3-half w3-container w3-green">
-                    <a href="#"><h2>Men Eyeglass</h2></a> 
+                    <a href=""><h2>Men Eyeglass</h2></a> 
                 </div>
                 <div class="w3-half w3-container">
                     <a href="#"><h2>Women Eyeglass</h2></a> 
