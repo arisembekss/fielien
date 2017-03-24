@@ -91,7 +91,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4 w3-hover-shadow">
-                    <a href="services.php" onclick="document.getElementById('id01').style.display='block'">
+                    <a href="#" onclick="document.getElementById('id01').style.display='block'">
                         <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
@@ -632,10 +632,10 @@
             </header>
             <div class="w3-row">
                 <div class="w3-half w3-container w3-green">
-                    <a href=""><h2>Men Eyeglass</h2></a> 
+                    <a href="services.php?category=<?= urlencode(base64_encode(1)); ?>"><h2>Men Eyeglass</h2></a> 
                 </div>
                 <div class="w3-half w3-container">
-                    <a href="#"><h2>Women Eyeglass</h2></a> 
+                    <a href="services.php?category=<?= urlencode(base64_encode(2))?>"><h2>Women Eyeglass</h2></a> 
                 </div>
             </div>
       </div>

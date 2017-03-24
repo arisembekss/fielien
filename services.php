@@ -2,7 +2,16 @@
 //session_start();
 require 'connect_db.php';
 
-$seltest="select * from eyeglasses where id_category = '".$_SESSION['eyeMen']."' order by last_update desc limit 8";
+//$category = $_GET['category'];
+if (isset($_GET['category'])) {
+  # code...
+  foreach($_GET as $loc=>$category)
+    $_GET[$loc] = urldecode(base64_decode($category));
+
+  $idProduk = $_GET['category'];
+} else{$idProduk='1';}
+echo $idProduk;
+$seltest="select * from eyeglasses where id_category = '".$idProduk."' order by last_update desc limit 8";
 $colors = array("red", "green", "blue", "yellow"); 
 $cars = array("volvo", "mitsu", "merc", "bmw");
 
@@ -16,22 +25,22 @@ $idfirst = array();
 <head>
 
 <?php include 'head.php'; ?>
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content=""> -->
 
     
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- <link href="css/modern-business.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -287,6 +296,7 @@ $idfirst = array();
         <hr>
 
         <!-- Footer -->
+        <?php include 'footer1.php';?>
         <!-- <footer>
             <div class="row">
                 <div class="col-lg-12">
@@ -294,7 +304,6 @@ $idfirst = array();
                 </div>
             </div>
         </footer> -->
-        <?php include 'footer1.php';?>
 
     </div>
     <!-- /.container -->
