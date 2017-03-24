@@ -1,3 +1,15 @@
+<?php
+//session_start();
+require 'connect_db.php';
+
+$seltest="select * from eyeglasses where id_category = '".$_SESSION['eyeMen']."' order by last_update desc limit 8";
+$colors = array("red", "green", "blue", "yellow"); 
+$cars = array("volvo", "mitsu", "merc", "bmw");
+
+$idfirst = array();
+//$countfirst = count($idfirst)
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +22,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -76,70 +88,37 @@
             <div class="col-lg-12">
                 <h2 class="page-header">Services Panels</h2>
             </div>
+            <?php
+
+              $result =mysqli_query($mysql, $seltest);
+              while ($row = $result -> fetch_assoc()) {
+                # code...
+                $idfirst[]=$row['id_eyeglass'];
+            ?>
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
+                        <img src="wp-admin/uploads/<?= $row['angle_depan'];?>" style="width: 100%;">
+                        <!-- <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
                               <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span>
+                        </span> -->
                     </div>
                     <div class="panel-body">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4><?= $row['nama_produk'];?></h4>
+                        <a href="detail-product.php?show=<?= urlencode(base64_encode($row['id_eyeglass']));?>" style="text-decoration: none">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
+            <?php 
+            }
+            $countfirst = count($idfirst);
+            ?>
+            
         </div>
 
         <!-- Service Tabs -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Service Tabs</h2>
             </div>
@@ -180,11 +159,11 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <!-- Service List -->
         <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Service List</h2>
             </div>
@@ -302,19 +281,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
         <hr>
 
         <!-- Footer -->
-        <footer>
+        <!-- <footer>
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
-        </footer>
+        </footer> -->
+        <?php include 'footer1.php';?>
 
     </div>
     <!-- /.container -->

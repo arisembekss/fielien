@@ -47,3 +47,21 @@
 .form-control::-moz-placeholder { color: red; }
 .form-control:-ms-input-placeholder { color: red; }
     </style>
+
+<style type="text/css">
+        /* unvisited link */
+        a:link {
+            color: #000;
+        }
+
+        /* visited link */
+        a:visited {
+            
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #009688;
+            text-decoration: none;
+        }
+    </style>
