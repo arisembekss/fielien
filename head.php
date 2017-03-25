@@ -51,17 +51,18 @@
 <style type="text/css">
         /* unvisited link */
         a:link {
-            color: #000;
+            color: #3f51b5;
         }
 
         /* visited link */
         a:visited {
-            
+            color: #3f51b5;
         }
 
         /* mouse over link */
         a:hover {
-            color: #009688;
+            /*color: #009688;*/
+            color: #87CEEB;
             text-decoration: none;
         }
-    </style>
+</style>

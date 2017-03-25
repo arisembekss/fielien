@@ -36,23 +36,7 @@
 <head>
 
     <?php include 'head.php';?>
-    <style type="text/css">
-        /* unvisited link */
-        a:link {
-            color: #000;
-        }
-
-        /* visited link */
-        a:visited {
-            
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: #009688;
-            text-decoration: none;
-        }
-    </style>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
