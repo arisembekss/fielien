@@ -7,6 +7,12 @@ if (isset($_GET['show'])) {
 
   $idProduk = $_GET['show'];
 } else{$idProduk='';}
+$selprod = "select * from eyeglasses where id_eyeglass = '".$idProduk."'";
+$resprod = mysqli_query($mysql, $selprod);
+while ($rowprod = $resprod -> fetch_assoc()) {
+  # code...
+  $idcat  = $rowprod['id_category'];
+}
 ?>
 <!DOCTYPE html>
 
@@ -24,10 +30,29 @@ include 'head.php';
 <body>
 
 <?php  
-include 'menu.php';
+include 'nav.php';
 ?>
 
-<div class="w3-container w3-card-2" style="width: 100%; height: 80%;margin-top: 80px">
+<div class="w3-container w3-card-2" style="width: 100%; height: 80%;margin-top: 3%">
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            <small></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="index.php">Home</a></li>
+            <?php
+              if ($idcat == 1) {
+                # code...
+                echo '<li><a href="services.php?category='. urlencode(base64_encode(1)).'">Eyeglass</a></li>';
+              } else {
+                echo '<li><a href="services.php?category='. urlencode(base64_encode(2)).'">Eyeglass</a></li>';
+              }
+            ?>
+            <li class="active">Detail</li>
+        </ol>
+    </div>
+</div>
 <center>
 <div style=" width: 50%">
 <?php  
@@ -145,7 +170,7 @@ function showDivs(n) {
 </script>
 
 <?php  
-include 'footer.php';
+include 'footer1.php';
 ?>
 </body>
 </html>

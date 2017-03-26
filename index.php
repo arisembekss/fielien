@@ -80,7 +80,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading">Eyegalsses </h4>
+                        <h4 class="service-heading">Eyeglasses </h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </a>
                 </div>
